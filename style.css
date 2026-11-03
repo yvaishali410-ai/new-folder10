@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f9f1;
+    color: #263b2c;
+}
+
+header {
+    background: #164b2b;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #b5f58d;
+}
+
+.hero {
+    min-height: 480px;
+    background: linear-gradient(
+        rgba(0, 30, 10, 0.55),
+        rgba(0, 30, 10, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600")
+    center/cover;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    color: #c6f59e;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #a7e66b;
+    color: #164b2b;
+    padding: 13px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    color: #176334;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.search-box {
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 13px;
+    border: 1px solid #b5cbb5;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    background: #228b45;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #145d2c;
+}
+
+.result {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+    line-height: 1.8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 28px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #00000012;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #228b45;
+    margin: 12px 0;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+.emoji {
+    font-size: 42px;
+}
+
+.calculator {
+    background: white;
+    max-width: 420px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #00000012;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.calculator h3 {
+    color: #228b45;
+    text-align: center;
+}
+
+.calculator small {
+    color: #666;
+    line-height: 1.5;
+}
+
+.weather {
+    background: #e4f4df;
+}
+
+.weather-card {
+    background: white;
+    max-width: 350px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px #00000012;
+    line-height: 2;
+}
+
+.weather-card h1 {
+    font-size: 48px;
+    color: #228b45;
+}
+
+.weather-card small {
+    color: #777;
+}
+
+.tip-box {
+    max-width: 550px;
+    margin: auto;
+    background: #e1f3d7;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.tip-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+footer {
+    background: #164b2b;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    line-height: 2;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+}
